@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
 
 function App() {
   const [targetNumber, setTargetNumber] = useState(null);
@@ -14,7 +13,6 @@ function App() {
     setTargetNumber(randomNumber);
     setUserGuess('');
     setMessage('Попробуйте угадать число от 1 до 100.');
-    setAttempts(0);
     setGameOver(false);
   };
 
@@ -69,9 +67,7 @@ function App() {
             <button onClick={startNewGame} className="new-game-button">
               Новая игра
             </button>
-          )}
-          
-          <p className="attempts">Попыток: {attempts}</p>
+          )}  
         </div>
       </header>
     </div>
